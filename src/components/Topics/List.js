@@ -5,6 +5,8 @@ const List = (props) => {
 
   if (!topics.length) { return null }
 
+  console.log('RENDER LIST')
+
   const listItems = topics.map(topic => {
     return (
       <li key={topic._id}>{topic.name}</li>
